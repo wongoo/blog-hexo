@@ -8,7 +8,7 @@ subtitle:
 description: "望哥的日志"
 keywords: "望哥"
 author: 望哥
-language: ZH-cn
+language: zh-Hans
 timezone:
 
 
@@ -60,6 +60,23 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+menu:
+  - page: home
+    directory: .
+    icon: fa-home
+  - page: archive
+    directory: archives/
+    icon: fa-archive
+  - page: tech
+    directory: tech/
+    icon: fa-archive
+  - page: about
+    directory: about/
+    icon: fa-user
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+
 # Writing
 #new_post_name: :title.md # File name of new posts
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -83,11 +100,11 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 15
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: default
 category_map:
 tag_map:
 
@@ -108,6 +125,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 theme: aircloud
+#theme: maupassant
+
+#theme: next
+scheme: Mist
+
+## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+widgets: 
+  - search
+  - category
+  - tag
+  - recent_posts
+  - recent_comments
+  - links
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
